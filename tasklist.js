@@ -1,9 +1,6 @@
-var listItem;
-
 function taskadd() {
 	taskNew = new objectTask();
 }
-
 function objectTask() { 
 	var task = document.getElementById('textinput').value; 
     var listItem=document.createElement("li");
@@ -16,17 +13,12 @@ function objectTask() {
     checkbox.id = "checkbox"; 
     document.getElementById('place').appendChild(listItem);
     document.getElementById(task).insertBefore(checkbox,listItem.firstChild);
-
 }
-
 function deleteCheckBox(){
-	if (document.getElementById('checkbox').checked === true){ 
+	while (document.getElementById('checkbox').checked === true){ 
 		var itemNode = document.getElementById(checkbox.name);
-		itemNode.parentNode.removeChild(checkbox.name);
-		
+		itemNode.parentNode.removeChild(itemNode);		
 	}
 }
-
-///test
 
 
