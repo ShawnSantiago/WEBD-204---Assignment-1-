@@ -6,11 +6,16 @@
 	<title>Task List</title>
 </head>
 <body>
+
 	<div id="list">
-	<input type='text' id='textinput'/>
-	<input type='button' onclick='taskadd()' value='Add to list'/>
-	<input type='button' onclick="deleteCheckBox()" value='Delete'/>
-	<ul id="place"> </ul>
+		<h1>Todays To-Do List</h1>
+		<div id="inputs" class="cf">
+		<input type='text' id='textinput'/>
+		<input type='button' onclick='taskadd()' value='Add to list'/>
+		<input type='button' onclick="deleteCheckBox()" value='Delete'/>
+		<input type='button' onclick="importantCheckBox()" value='!'/>
+		</div>
+		<ul id="place"> </ul>
 	</div>
 </body>
 <script type="text/javascript" src="tasklist.js"></script>
